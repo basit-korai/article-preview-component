@@ -1,19 +1,14 @@
 const shareBtn = document.querySelector(".btn-share");
-const closeBtn = document.querySelector(".btn-close");
+const closeBtn = document.querySelector("#btn-close");
 const popup = document.querySelector("#popup");
 
-console.log(popup);
 
-window.addEventListener("DOMContentLoaded", popupClose);
+shareBtn.addEventListener("click", () => {
+  popup.show();
+});
 
-function popupClose() {
-  popup.close();
+closeBtn.addEventListener("click", () => {
+   popup.close();
 
-}
-// shareBtn.addEventListener("click", () => {
-//   popup.show();
-// });
+});
 
-// closeBtn.addEventListener("click", () => {
-//   popup.close();
-// });

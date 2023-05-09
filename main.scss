@@ -91,7 +91,6 @@ body {
   font-size: $font-size;
   font-family: $font-family;
   background: $grayish-blue-300;
-  background-color: black;
 }
 
 .container {
@@ -121,7 +120,7 @@ section {
   position: relative;
   // border: 2px solid yellowgreen;
 
-  .popup {
+  .popup[open] {
     width: 100%;
     padding: 1.5em 2em;
     position: absolute;
@@ -132,25 +131,19 @@ section {
     background-color: $grayish-blue-700;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
 
-    .links-wrapper {
-      display: flex;
+    span {
+      color: hsla(0, 0%, 100%, 50%);
       letter-spacing: 5px;
-      color: $grayish-blue-300;
-      // border: 2px solid gold;
-      width: 70%;
-      justify-content: space-around;
+      font-weight: 300;
+    }
+
+    .social-links {
+      display: flex;
       align-items: center;
-
-
-      .social-links {
-        display: flex;
-        align-items: center;
-        gap: .8rem;
-
-
-      }
+      gap: 1rem
     }
 
   }
@@ -230,6 +223,7 @@ section {
 .btn-share:active {
   background-color: hsla(0, 0%, 50%, 30%);
 }
+
 a {
   text-decoration: none;
 }

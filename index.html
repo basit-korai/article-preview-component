@@ -15,9 +15,8 @@
   <div class="container">
     <main>
       <article class="product">
-        <div class="img-wrapper">
-          <!-- <img src="./assets/images/drawers.jpg" alt="drawers image"> -->
-        </div>
+        <picture class="img-wrapper">
+        </picture>
 
         <section>
           <h1 class="title">
@@ -33,32 +32,29 @@
 
           <div class="authercard">
             <div class="auther-info">
-              <div class="avatar">
-              </div>
+              <picture class="avatar">
+              </picture>
 
-              <div class="auther">
+              <span class="auther">
                 <a href="#"><span>Michelle Appleton</span></a>
                 <a href="#"><time datetime="2020-6-28">28 Jun 2020</time></a>
-              </div>
-
+              </span>
             </div>
 
-            <button type="button" class="btn-share">
+            <button type="button" class="btn-share" id="btn-share">
               <img src="./assets/images/icon-share.svg" alt="share">
             </button>
           </div>
 
           <dialog class="popup" id="popup">
-            <div class="links-wrapper">
-              <p>SHARE</p>
+              <span>SHARE</span>
               <div class="social-links">
-                  <a href="facebook.com"><img src="./assets/images/icon-facebook.svg" alt="facebook">
-                  <a href="twitter.com"><img src="./assets/images/icon-twitter.svg" alt="twitter">
-                  <a href="pinterest.com"><img src="./assets/images/icon-pinterest.svg" alt="pinterest">
-                </div>
-            </div>
+                <a href="facebook.com"><img src="./assets/images/icon-facebook.svg" alt="facebook"></a>
+                <a href="twitter.com"><img src="./assets/images/icon-twitter.svg" alt="twitter"></a>
+                <a href="pinterest.com"><img src="./assets/images/icon-pinterest.svg" alt="pinterest"></a>
+              </div>
 
-            <button type="button" class="btn-close">
+            <button type="button" class="btn-close" id="btn-close">
               <img src="./assets/images/icon-share.svg" alt="share">
             </button>
           </dialog>
