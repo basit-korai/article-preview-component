@@ -62,5 +62,5 @@ Users should be able to:
 
 - Website - Don't have it yet
 - Frontend Mentor - [@basit-flash](https://www.frontendmentor.io/profile/basit-flash)
-- Twitter - [@basitkorai](https://www.twitter.com/basitkorai)
+- Twitter - [@basitxkorai](https://www.twitter.com/basitxkorai)
 
