@@ -1,10 +1,9 @@
-const shareBtn = document.querySelector(".btn-share");
+const shareBtn = document.querySelector("#btn-share");
 const closeBtn = document.querySelector("#btn-close");
 const popup = document.querySelector("#popup");
 
 shareBtn.addEventListener("click", () => {
   let attr = popup.hasAttribute("open");
-  console.log(attr);
 
   if (!attr) {
     popup.show();
