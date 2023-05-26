@@ -175,7 +175,6 @@ section .popup[open] .social-links {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
 }
 
 .btn-share:hover,
@@ -201,22 +200,29 @@ a {
     position: relative;
   }
   section .popup[open] {
+    position: absolute;
     border-radius: 15px;
-    bottom: 150%;
-    left: 60%;
     width: 15rem;
     height: 3.35rem;
+    bottom: 3.4125rem;
+    left: unset;
+    right: -6.25rem;
   }
   section .popup[open] .btn-close {
     display: none;
   }
   section .popup[open]::after {
+    position: absolute;
     content: "";
     width: 1rem;
     height: 1rem;
-    transform: translateY(1.73rem) translateX(5rem) rotate(45deg);
+    transform: translateY(1.73rem) translateX(5.4225rem) rotate(45deg);
     background: hsl(217, 19%, 35%);
+  }
+  section .btn-share {
     position: absolute;
+    left: unset;
+    right: 0rem;
   }
   .product {
     display: grid;

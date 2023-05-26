@@ -116,7 +116,7 @@ section {
 
   .popup[open] {
     width: 100%;
-    padding: 0em 2em;
+    padding: 1.5em 2em;
     position: absolute;
     bottom: 0px;
     border: none;
@@ -195,7 +195,6 @@ section {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative;
 }
 
 .btn-share:hover,
@@ -214,47 +213,55 @@ a {
 }
 
 @media screen and (min-width: 500px) {
-  section {
-    border-radius: 0 15px 15px 0;
 
-    .authercard {
-      position: relative;
-    }
+    section {
+      border-radius: 0 15px 15px 0;
 
-    .popup[open] {
-      border-radius: 15px;
-      bottom: 150%;
-      left: 60%;
-      width: 15rem;
-      height: 3.35rem;
+      .authercard {
+        position: relative;
+      }
 
-      left: unset;
-      top: 7.75rem;
-      right: -4.5rem;
+      .popup[open] {
+        position: absolute;
+        border-radius: 15px;
+        width: 15rem;
+        height: 3.35rem;
+        bottom: 3.4125rem;
+        left: unset;
+        right: -6.25rem;
 
-      .btn-close {
-        display: none;
+        .btn-close {
+          display: none;
+        }
+      }
+
+      .popup[open]::after {
+        position: absolute;
+        content: "";
+        width: 1rem;
+        height: 1rem;
+        transform: translateY(1.73rem) translateX(5.4225rem) rotate(45deg);
+        background: $grayish-blue-700;
+      }
+
+      .btn-share {
+        position: absolute;
+        left: unset;
+        right: -0rem;
       }
     }
 
-    .popup[open]::after {
-      content: "";
-      width: 1rem;
-      height: 1rem;
-      transform: translateY(1.73rem) translateX(5rem) rotate(45deg);
-      background: $grayish-blue-700;
-      position: absolute;
+    .product {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+
+    .img-wrapper {
+      background: url("../assets/images/drawers.jpg") cover no-repeat;
+      border-radius: 15px 0 0 15px;
+      height: 100%;
     }
   }
 
-  .product {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
 
-  .img-wrapper {
-    background: url("../assets/images/drawers.jpg") cover no-repeat;
-    border-radius: 15px 0 0 15px;
-    height: 100%;
-  }
-}
+
