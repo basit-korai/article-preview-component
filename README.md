@@ -54,7 +54,7 @@ Users should be able to:
 
 ### Useful resources
 
-- [A blog on position](https://blog.webdevsimplified.com/2022-01/css-position/) - It helped me with the position property
+- [A blog post on position](https://blog.webdevsimplified.com/2022-01/css-position/) - It helped me with the position property
 
 
 ## Author
